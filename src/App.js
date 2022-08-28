@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Search from './components/Search';
@@ -15,7 +15,7 @@ const App = () => {
         <Navbar darkTheme={darkTheme} setDarkTheme={setDarkTheme} />
         <div className='p-4'>
           <Routes>
-              <Route path="/" element={<Search/>} />
+              <Route path="/" element={<Navigate to="/search"/>} />
               <Route path="/search" element={<Results />} />
               <Route path="/images" element={<Results />} />
               <Route path="/news" element={<Results />} />

@@ -16,7 +16,7 @@ export const ResultContextProvider = ({ children }) => {
             method: 'GET',
             headers:  {
                 'X-User-Agent': 'desktop',
-                'X-Proxy-Location': 'EU',
+                'X-Proxy-Location': 'US',
                 'X-RapidAPI-Key': '8396ef7af7msh4f54ef9caf0feffp1283dfjsn2a7648f727a8',
                 'X-RapidAPI-Host': 'google-search3.p.rapidapi.com'
             }
